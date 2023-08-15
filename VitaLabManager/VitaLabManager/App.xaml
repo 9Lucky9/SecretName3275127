@@ -1,0 +1,30 @@
+﻿<Application x:Class="VitaLabManager.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:VitaLabManager"
+             xmlns:view="clr-namespace:VitaLabManager.MVVM.Views"
+             xmlns:viewModel="clr-namespace:VitaLabManager.MVVM.ViewModels">
+    <Application.Resources>
+
+        <DataTemplate DataType="{x:Type TypeName=viewModel:CustomerControlViewModel}">
+            <view:CustomerControl/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type TypeName=viewModel:ProductOrderControlViewModel}">
+            <view:ProductOrderControl/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type TypeName=viewModel:BasketControlViewModel}">
+            <view:BasketControl/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type TypeName=viewModel:ProductControlViewModel}">
+            <view:ProductControl/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type TypeName=viewModel:UsersControlViewModel}">
+            <view:UsersControl/>
+        </DataTemplate>
+
+    </Application.Resources>
+</Application>
