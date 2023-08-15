@@ -8,7 +8,7 @@ VitaLabManager - клиентское приложение на WPF + MVVM.
 ## Подготовка к запуску
 1. Клонировать репозиторий.
 2. Открыть VitaLabAPI.sln, добавить проект VitaLabData в решение. Добавить ссылку VitaLabData в VitaLabAPI.
-3. (Опциональный если нету ссылки на проет.) Открыть VitaLabManager, добавить проект VitaLabData в решение.  Добавить ссылку VitaLabData в VitaLabManager.
+3. (Опциональный если нету ссылки на проект.) Открыть VitaLabManager, добавить проект VitaLabData в решение.  Добавить ссылку VitaLabData в VitaLabManager.
 4. Запустить скрипт создания и заполнения базы данных VitalLabDbScript.sql, Используемая версия базы данных: MS SQL SERVER EXPRESS.
 5. Зайти в VitaLabAPI appsettings.json и изменить ConnectionStrings" "MSSQL": "Data Source" на свой сервер (localhost может не работать из-за того, что я не знаю какая instance стоит на конечном компьютере sql express или ms sql server и также использовал систему авторизации windows (integrated security=true), если же стоит иная, стоит это прописать в строке подключения.
 
